@@ -7,6 +7,20 @@ h1 {
   font-size: 4em;
 }
 
+.post-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: black;
+  font-size: 3em;
+}
+
+.author-date {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 1em;
+}
+
 h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -30,4 +44,17 @@ p {
   font-weight: 500;
   color: black;
   font-size: 1.2em;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+  font-size: 1em;
+}
+
+img {
+  width: 400px;
+  height: 280px;
 }

@@ -24,8 +24,8 @@ h1 {
 h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: black;
-  font-size: 1.2em;
+  color: red;
+  font-size: 1.7em;
 }
 
 a {
@@ -39,22 +39,18 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
+.normal-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: black;
   font-size: 1.2em;
 }
 
-li {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  color: black;
-  font-size: 1em;
-}
-
 img {
   width: 400px;
   height: 280px;
+}
+
+ul {
+  list-style-type: circle;
 }

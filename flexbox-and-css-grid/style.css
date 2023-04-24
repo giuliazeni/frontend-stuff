@@ -22,15 +22,19 @@
   .span4 {
     flex-basis: 100%;
   }
+
+  .span2-4 {
+    flex-basis: 100%;
+  }
 }
 
 @media (min-width: 800px) {
-  /* I need to add span3-1 to this flex-basis otherwise it'll keep 100% from the previous media query */
+  /* I need to add span3-1 to flex-basis 22% otherwise it'll keep the 100% from the previous media query */
   figure, .span3-1 {
     flex-basis: 22%;
   }
 
-  .span2 {
+  .span2, .span2-4 {
     flex-basis: 48%;
   }
 

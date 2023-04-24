@@ -1,39 +1,54 @@
-/* write CSS to correspond with the descriptions above. See notes for math tips */
+@media (min-width: 550px) {
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 4%;
+  }
 
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  gap: 4%;
+  figure, .span2 {
+    flex-basis: 48%;
+  }
+
+  .span3 {
+    flex-basis: 100%;
+  }
+
+  .span3-1 {
+    flex-basis: 100%;
+  }
+
+  /* By declaring span4 here, I don't need to rewrite it in the next media query, too */
+  .span4 {
+    flex-basis: 100%;
+  }
 }
 
-figure {
-  flex-basis: 22%;
+@media (min-width: 800px) {
+  /* I need to add span3-1 to this flex-basis otherwise it'll keep 100% from the previous media query */
+  figure, .span3-1 {
+    flex-basis: 22%;
+  }
 
-}
+  .span2 {
+    flex-basis: 48%;
+  }
 
-.span2 {
-  flex-basis: 48%;
-}
+  .span3 {
+    flex-basis: 74%;
+  }
 
-.span3 {
-  flex-basis: 74%;
-}
+  .order-1 {
+    order: 1;
+  }
 
-.span4 {
-  flex-basis: 100%;
-}
+  .order-2 {
+    order: 2;
+  }
 
-.order-1 {
-  order: 1;
-}
-
-.order-2 {
-  order: 2;
-}
-
-.oder-3 {
-  order: 3;
+  .oder-3 {
+    order: 3;
+  }
 }
 
 

@@ -40,6 +40,69 @@ section h2 {
   font-size: 2.5rem;
 }
 
+img {
+  height: 300px;
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center; 
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.border-1 {
+  border-color: var(--color7);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 1%;
+}
+
+.border-2 {
+  border-color: var(--color3);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 1%;
+}
+
+.border-3 {
+  border-color: var(--color6);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 1%;
+}
+
+.border-4 {
+  border-color: var(--color8);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 1%;
+}
+
+.border-5 {
+  border-color: var(--color4);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 1%;
+}
+
+.border-6 {
+  border-color: var(--color2);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 1%;
+}
+
+figure {
+  flex-basis: 52%;
+}
+
 
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 

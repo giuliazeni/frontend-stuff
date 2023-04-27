@@ -21,6 +21,20 @@ html {
   box-sizing: inherit;
 }
 
+header {
+  padding: 1rem;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  background-color: var(--color5);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #DBE5DE;

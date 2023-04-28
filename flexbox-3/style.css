@@ -65,7 +65,6 @@ figure {
   margin: 0;
 }
 
-
 /* To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow.
 
 Spelled out the individual border styles so border-color could go elsewhere. Styling is the same for all borders except the color. */
@@ -186,26 +185,74 @@ Spelled out the individual border styles so border-color could go elsewhere. Sty
 
 /* footer styles */
 
-footer {
+/* color stretches to 100% of the page width */
+
+.footer {
   background-color: var(--color5);
+  padding: 3rem;
+}
+
+/* width limited and centered to line up with the rest of the page */
+
+footer h4 {
+  margin-top: 0;
+}
+
+footer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-flow: row wrap;
+}
+
+footer li {
+  margin-right: 1rem;
+}
+
+footer address {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+footer {
+  padding: 1.8rem;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-flow: row wrap;
 }
 
+footer li {
+  margin-right: 1rem;
+}
+
+footer address {
+  font-style: normal;
+  margin-top: 2rem;
+  font-weight: bold;
+}
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
 @media (min-width: 550px) {
-  #collections ul {
+  #collections ul,
+  footer {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
   }
-  #collections li {
+  #collections li,
+  .social,
+  address {
       flex-basis: 49.5%;
   }
   /* turn off object position, inherit object-fit: cover */
@@ -220,14 +267,23 @@ footer ul {
   }
   .missiontext img {
       flex-basis: 32.5%;
-      order: 1;
+      order: 2;
       width: 100%;
   }
 
   .missiontext p {
       flex-basis: 55.5%;
-      order: 2;
+      order: 1;
   }
+
+  .social, address {
+    flex-basis: 49.5%;
+  }
+
+   /* remove the top margin assigned above that provided space between .social and address */
+   footer address {
+    margin-top: 0;
+}
 }
 
 @media (min-width: 800px) {
@@ -243,10 +299,20 @@ footer ul {
   }
   #mission .missiontext {
       flex-basis: 64.5%;
+      order: 2;
   }
   #mission img {
       flex-basis: 32.5%;
       max-height: 200px;
       max-width: 300px;
+      order: 1;
+  }
+
+  .social {
+    flex-basis: 32.5%;
+  }
+
+  address {
+    flex-basis: 65.5%;
   }
 }

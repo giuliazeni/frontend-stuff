@@ -24,7 +24,6 @@ html {
 header {
   padding: 1rem;
   width: 100%;
-  height: 80px;
   margin: 0 auto;
   background-color: var(--color5);
 }
@@ -76,12 +75,39 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+
+nav li {
+  flex-basis: 48%;
+  margin-bottom: .5rem;
+  margin: 0 auto;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--color10);
+  display: block;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+nav li:first-child a {
+  background-color: transparent;
+}
+
+nav a:hover {
+  background-color: var(--color1);
+  color: var(--color5);
 }
 
 /* turn off default browser value */
@@ -103,6 +129,7 @@ Spelled out the individual border styles so border-color could go elsewhere. Sty
   border-width: 10px;
   border-style: solid;
   border-radius: 5px;
+  text-align: center;
 }
 
 
@@ -281,8 +308,11 @@ footer address {
       flex-basis: 49.5%;
   }
   /* turn off object position, inherit object-fit: cover */
+
   #collections figure img {
       object-position: 0;
+
+
   }
   .missiontext {
       display: flex;
@@ -308,7 +338,26 @@ footer address {
    /* remove the top margin assigned above that provided space between .social and address */
    footer address {
     margin-top: 0;
-}
+  }
+
+  /* navigation: logo on the top line, the rest of the navigation on the second line */
+  nav ul {
+      justify-content: center;
+      gap: 1.2em;
+  }
+  nav li {
+      flex-basis: auto;
+      margin-bottom: 0;
+  }
+  nav a {
+      color: var(--color1);
+      background-color: transparent;
+      padding: 0;
+  }
+  nav a:hover {
+      color: var(--color2);
+      background-color: transparent;
+  }
 }
 
 @media (min-width: 800px) {
@@ -340,4 +389,25 @@ footer address {
   address {
     flex-basis: 65.5%;
   }
+}
+
+/* navigation - logo in the center */
+nav ul {
+  justify-content: flex-end;
+}
+
+nav li:first-child {
+  flex-basis: auto;
+  margin: 0 auto;
+  order: 2;
+}
+
+nav li:nth-child(2),
+nav li:nth-child(3) {
+  order: 1;
+}
+
+nav li:nth-child(4),
+nav li:nth-child(5) {
+  order: 3;
 }

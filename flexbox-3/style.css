@@ -58,6 +58,31 @@ section ul {
   margin: 0;
 }
 
+/* header and nav styles */
+
+.header {
+  background-color: var(--color5);
+}
+
+header {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* navigation styling - universal across beakpoints */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
 /* turn off default browser value */
 

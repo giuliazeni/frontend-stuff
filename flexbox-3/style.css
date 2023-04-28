@@ -92,7 +92,7 @@ nav li:first-child {
 }
 
 nav a {
-  text-decoration:line-through;
+  text-decoration: none;
   font-size: 1.2rem;
   color: white;
   background-color: var(--color10);

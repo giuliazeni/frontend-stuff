@@ -1,8 +1,22 @@
+figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto); /* 1 row for img, 1 for figcaption, 1 empty */
+}
+
+img {
+  grid-column: 1/2;
+  grid-row: 1/3; /* Because we declared 3 rows and the img should span from top to bottom */
+}
+
+figcaption {
+  grid-column: 1/2;
+  grid-row: 2/3; /* This make things overlap on the 3rd row */
+}
 
 figcaption {
   opacity: 0.7;
 }
-
 
 /* Basic figure and caption styling */
 /* Turn off margin, set by browser */

@@ -1,8 +1,21 @@
 .wrapper {
   display: grid;
-  grid-template-columns: ;
+  grid-template-columns: repeat(4, 1fr); /* or 1fr 1fr 1fr 1fr */
+  grid-template-rows: auto;
+  gap: 4%;
 }
 
+.span2 {
+  grid-column: span 2;
+}
+
+.span3 {
+  grid-column: span 3;
+}
+
+.span4 {
+  grid-column: span 4;
+}
 
 html {
   box-sizing: border-box;
@@ -15,7 +28,7 @@ body {
 padding: 0;
 border: 0;
 font-family: Arial, sans-serif;
-background: linear-gradient(353deg, rgba(148,210,189,1) 40%, rgba(61,147,151,1) 100%);
+background: lightgray;
 }
 
 /* Turn off margin, set by browser */
